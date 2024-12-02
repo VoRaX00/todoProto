@@ -6,6 +6,7 @@ option go_package = "kerzhakov.tasks.v1;tasksv1";
 
 service Tasks {
   rpc Create(CreateTaskRequest) returns (CreateTaskResponse);
+  rpc Get(GetAllRequest) returns (GetAllResponse);
   rpc GetByName(GetByNameRequest) returns (GetByNameResponse);
   rpc GetById(GetByIdRequest) returns (GetByIdResponse);
   rpc Update(UpdateTaskRequest) returns (UpdateTaskResponse);
@@ -28,6 +29,15 @@ message CreateTaskRequest {
 
 message CreateTaskResponse {
   int64 id = 1;
+}
+
+message GetAllRequest {
+  int64 page = 1;
+  int64 countTaskOnPage = 2;
+}
+
+message GetAllResponse {
+  repeated Task task = 1;
 }
 
 message GetByNameRequest {
