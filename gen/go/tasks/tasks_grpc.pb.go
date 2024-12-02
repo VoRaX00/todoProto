@@ -4,7 +4,7 @@
 // - protoc             v3.21.12
 // source: tasks/tasks.proto
 
-package tasksv2
+package tasksv1
 
 import (
 	context "context"
