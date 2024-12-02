@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package tasks;
 
-option go_package = "kerzhakov.tasks.v1;tasksv1";
+option go_package = "kerzhakov.tasks.v2;tasksv2";
 
 service Tasks {
   rpc Create(CreateTaskRequest) returns (CreateTaskResponse);
