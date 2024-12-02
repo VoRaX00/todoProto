@@ -10,7 +10,7 @@ service Tasks {
   rpc GetByName(GetByNameRequest) returns (GetByNameResponse);
   rpc GetById(GetByIdRequest) returns (GetByIdResponse);
   rpc Update(UpdateTaskRequest) returns (UpdateTaskResponse);
-  rpc Delete(DeleteTaskRequest) returns (DeleteTaskRequest);
+  rpc Delete(DeleteTaskRequest) returns (DeleteTaskResponse);
 }
 
 message Task {
